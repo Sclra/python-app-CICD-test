@@ -12,7 +12,7 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'pip3 install -r requirements.txt'
+                sh 'pip3 install  --break-system-package -r requirements.txt'
             }
         }
 
