@@ -5,6 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
+		sh '----------------------------------echo "Checkout stage--------------------------------------" '
                 git branch: 'main',
 			url: 'https://github.com/Sclra/python-app-CICD-test.git'
             }
